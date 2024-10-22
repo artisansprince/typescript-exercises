@@ -1,6 +1,6 @@
 # typescript-exercises
 
-Repository ini berisi latihan algoritma harian dengan TypeScript. Setiap pagi, akan mengerjakan satu atau lebih tantangan algoritma sederhana untuk "menghangatkan" kepala dan melatih logika pemrograman.
+Repository ini berisi tantangan algoritma harian dengan TypeScript. Setiap pagi, akan mengerjakan satu atau lebih tantangan algoritma sederhana untuk "menghangatkan" kepala dan melatih logika pemrograman.
 
 ## Kenapa Repositori ini Dibuat?
 - Melatih algoritma dasar setiap hari untuk menjaga konsistensi dan meningkatkan keterampilan.
@@ -17,8 +17,7 @@ Repository ini berisi latihan algoritma harian dengan TypeScript. Setiap pagi, a
 - `test/`: (Opsional) Berisi pengujian unit jika ingin menambahkan tes untuk setiap solusi.
 
 ## Apa Saja Tantangan yang Dikerjakan?
-1. [YYYY-MM-DD] Tantangan 1: Nama Tantangan
-2. [YYYY-MM-DD] Tantangan 2: Nama Tantangan
+1. [2024-10-23 Tantangan 1: Sum of Multiples](src/2024-10-23-sum-of-multiples.ts)
 
 
 
