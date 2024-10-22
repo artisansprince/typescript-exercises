@@ -1,0 +1,25 @@
+{
+  "name": "typescript-exercises",
+  "version": "1.0.0",
+  "description": "Repository ini berisi latihan algoritma harian dengan TypeScript. Setiap pagi, akan mengerjakan satu atau lebih tantangan algoritma sederhana untuk \"menghangatkan\" kepala dan melatih logika pemrograman.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artisansprince/typescript-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artisansprince/typescript-exercises/issues"
+  },
+  "homepage": "https://github.com/artisansprince/typescript-exercises#readme",
+  "devDependencies": {
+    "@types/node": "^22.7.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
