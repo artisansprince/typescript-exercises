@@ -20,20 +20,60 @@ Repository ini berisi latihan algoritma harian dengan TypeScript. Setiap pagi, a
 1. [YYYY-MM-DD] Tantangan 1: Nama Tantangan
 2. [YYYY-MM-DD] Tantangan 2: Nama Tantangan
 
-## Cara Menjalankan
-1. Instal dependensi (jika ada):
-   ```
-   npm install
-   ```
 
-2. Jalankan file TypeScript sesuai kebutuhan:
-   - Tanpa kompilasi menggunakan `ts-node`:
-     ```
-     npx ts-node src/YYYY-MM-DD-nama-tantangan.ts
-     ```
 
-   - Dengan kompilasi ke JavaScript terlebih dahulu:
-     ```
-     tsc src/YYYY-MM-DD-nama-tantangan.ts
-     node src/YYYY-MM-DD-nama-tantangan.js
-     ```
+## Cara Memulai
+
+### 1. Inisialisasi Proyek
+
+Pertama, inisialisasi proyek dengan menjalankan perintah berikut di terminal:
+
+```bash
+npm init -y
+```
+
+Ini akan membuat file `package.json` yang diperlukan untuk mengelola dependensi proyek.
+
+### 2. Install TypeScript dan ts-node
+
+Setelah itu, install `typescript` dan `ts-node` sebagai dependensi untuk menjalankan file TypeScript:
+
+```bash
+npm install typescript ts-node @types/node --save-dev
+```
+
+### 3. Buat Struktur Folder
+
+Buat dua folder `src/` dan `test/` untuk menampung solusi dan pengujian unit (jika ada):
+
+```bash
+mkdir src
+mkdir test
+```
+
+### 4. Inisialisasi TypeScript
+
+Untuk inisialisasi TypeScript, jalankan perintah berikut untuk membuat file konfigurasi `tsconfig.json`:
+
+```bash
+npx tsc --init
+```
+
+### 5. Menjalankan Tantangan
+
+Kamu bisa menjalankan tantangan harian dengan salah satu cara berikut:
+
+Tanpa kompilasi (menggunakan `ts-node`):
+
+```bash
+npx ts-node src/YYYY-MM-DD-nama-tantangan.ts
+```
+
+Dengan kompilasi ke JavaScript terlebih dahulu:
+
+```bash
+npx tsc src/YYYY-MM-DD-nama-tantangan.ts
+node src/YYYY-MM-DD-nama-tantangan.js
+```
+
+---
