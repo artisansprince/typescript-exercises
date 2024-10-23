@@ -18,6 +18,7 @@ Repository ini berisi tantangan algoritma harian dengan TypeScript. Setiap pagi,
 
 ## Apa Saja Tantangan yang Dikerjakan?
 1. [2024-10-23 Tantangan 1: Sum of Multiples](src/2024-10-23-sum-of-multiples.ts)
+1. [2024-10-24 Tantangan 2: Find Missing Number](src/2024-10-24-find-missing-number.ts)
 
 
 
