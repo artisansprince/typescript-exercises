@@ -39,3 +39,19 @@ if (isPalindrome(input) === true) {
 else {
     console.log(`kalimat "${input}" bukan palindrome.`)
 }
+
+//pembahasan program
+/*
+Program ini bekerja dengan cara:
+
+Membersihkan string:
+Menghapus semua karakter yang bukan huruf atau angka, lalu mengubahnya ke huruf kecil. Contoh: "Kasur ini rusak" menjadi "kasurinirusak".
+
+Membandingkan string dengan versi terbaliknya:
+String yang sudah dibersihkan dibalik, lalu dibandingkan dengan versi aslinya. Jika sama, string tersebut adalah palindrome.
+
+Hasil:
+Jika string adalah palindrome, program mencetak bahwa kalimat tersebut adalah palindrome; jika tidak, mencetak bahwa itu bukan palindrome.
+Contoh output: "Kasur ini rusak" adalah palindrome.
+
+*/
