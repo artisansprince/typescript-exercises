@@ -1,4 +1,4 @@
-/*2024-10-24-find-missing-number.ts
+/*20241024-find-missing-number.ts
 
 
 Tantangan: Find the Missing Number
