@@ -1,4 +1,4 @@
-/* 2024-10-23-sum-of-multiples.ts
+/* 20241023-sum-of-multiples.ts
 
 Tantangan Hari Ini: "Sum of Multiples"
 Deskripsi: Buat sebuah fungsi yang menerima tiga parameter: n (bilangan bulat positif), a, dan b (keduanya bilangan bulat positif). Fungsi ini harus mengembalikan jumlah dari semua bilangan bulat yang merupakan kelipatan dari a atau b yang lebih kecil atau sama dengan n.
