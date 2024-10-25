@@ -18,3 +18,24 @@ Bersihkan string dari karakter yang tidak penting seperti spasi, tanda baca, dan
 Bandingkan string tersebut dengan versi terbaliknya.
 
 */
+
+// program penyelesaian
+
+function isPalindrome(str:string): boolean {
+    // beriskan string
+    const cleanedStr = str.replace(/[^A-Za-z0-9]/g, '').toLocaleLowerCase();
+
+    // bandingkan string dengan versi terbaliknya
+    return cleanedStr === cleanedStr.split('').reverse().join('');
+}
+
+// penggunaan
+const input = "Kasur ini rusak";
+console.log(isPalindrome(input));
+
+if (isPalindrome(input) === true) {
+    console.log(`kalimat "${input}" adalah palindrome.`);
+}
+else {
+    console.log(`kalimat "${input}" bukan palindrome.`)
+}
