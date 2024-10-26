@@ -34,4 +34,14 @@ async function calculateSum() {
 }
 
 // panggil calculateSum untuk melihat hasilnya
-calculateSum();
+calculateSum(); // output 15
+
+
+
+
+
+// pembahasan
+/*
+fetchData mensimulasikan pengambilan data dengan setTimeout.
+calculateSum menunggu hasil dari fetchData, lalu menjumlahkan angka-angka di dalam array dan mencetak totalnya.
+*/
