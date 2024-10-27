@@ -53,3 +53,23 @@ async function filterAndSortDatA(): Promise<UserData[]> {
 filterAndSortDatA()
     .then(result => console.log ("filtered and sorted data: ", result))
     .catch(error => console.error("error: ", error));
+
+
+
+// pembahasan
+/*
+Berikut ini adalah sedikit pembahasan tentang bagaimana program ini bekerja
+
+1. Tipe Data: UserData adalah tipe data objek dengan name (string) dan score (number).
+2. fetchData: Fungsi async yang mengembalikan array objek UserData sebagai data dummy.
+3. filterAndSortDatA:
+   await fetchData() untuk ambil data secara async.
+   filter() hanya menyimpan objek dengan score > 50.
+   sort() urutkan hasil filter secara menurun berdasarkan score.
+
+4. Eksekusi dan Output:
+   Fungsi dijalankan dan jika berhasil, tampilkan data yang difilter dan diurutkan; jika error, tampilkan pesan error.
+   Output: Hanya objek dengan score > 50, diurutkan dari skor tertinggi ke terendah.
+
+
+*/
