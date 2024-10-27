@@ -16,3 +16,40 @@ Langkah-langkah
 
 */
 
+import { error } from "console";
+
+type UserData = {
+    name: string;
+    score: number;
+}
+
+
+// ini fungsi untuk mendapatkan data secara async
+async function fetchData(): Promise<UserData[]> {
+    return [
+        { name: "Alice", score: 70 },
+        { name: "Bob", score: 45 },
+        { name: "Charlie", score: 85 },
+        { name: "Dave", score: 60 },
+        { name: "Eve", score: 40 }
+    ];
+}
+
+// fungsi untuk filter dan sort data
+async function filterAndSortDatA(): Promise<UserData[]> {
+    const data = await fetchData();
+
+    // filter data dengan score diatas 50
+    const filteredData = data.filter(user => user.score > 50);
+
+    // sort data berdasarkan score secara menurun (descending)
+    const sortedData = filteredData.sort((a, b) => b.score - a.score);
+
+    return sortedData;
+}
+
+
+// menjalankan fungsi dan menampilkan hasil
+filterAndSortDatA()
+    .then(result => console.log ("filtered and sorted data: ", result))
+    .catch(error => console.error("error: ", error));
