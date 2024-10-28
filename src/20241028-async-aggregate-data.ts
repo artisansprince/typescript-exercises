@@ -13,3 +13,45 @@ Langkah-langkah
 3. Output berupa total amount untuk semua transaksi bertipe "income".
 
 */
+
+
+// program penyelesaian
+type Transaction = {
+    id: number;
+    type: "income" | "expense";
+    amount: number;
+    description: string;
+}
+
+
+// fungsi untuk mendapatkan data transaksi secara async
+async function fetchTransaction(): Promise<Transaction[]> {
+    return [
+        { id: 1, type: "income", amount: 500, description: "Salary" },
+        { id: 2, type: "expense", amount: 150, description: "Groceries" },
+        { id: 3, type: "income", amount: 200, description: "Freelance" },
+        { id: 4, type: "expense", amount: 80, description: "Transport" },
+        { id: 5, type: "income", amount: 300, description: "Investment" }
+    ];
+}
+
+
+// fungsi utuk filter dan menghitung total income
+async function calculateTotalIncome(): Promise<number> {
+    const transaction = await fetchTransaction();
+
+    // filter transaksi bertipe income
+    const incomeTransaction = transaction.filter(transaction => transaction.type === "income");
+
+    // menghitung total amount dari income transactions
+    const taotalIncome = incomeTransaction.reduce((total, transaction) => total + transaction.amount, 0);
+
+    return taotalIncome;
+}
+
+
+// menjalankan fungsi dan menampilkan hasil
+calculateTotalIncome()
+.then(total => console.log("total income amount:", total)) // output: total income amount: 1000
+.catch(error => console.error("error:", error));
+
