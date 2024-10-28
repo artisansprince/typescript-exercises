@@ -55,3 +55,19 @@ calculateTotalIncome()
 .then(total => console.log("total income amount:", total)) // output: total income amount: 1000
 .catch(error => console.error("error:", error));
 
+
+// pembahasan
+
+/*
+
+1. Tipe Data: Transaction berisi informasi id, type (income atau expense), amount, dan description.
+2. fetchTransactions: Fungsi async yang mengembalikan array transaksi sebagai data dummy.
+3. calculateTotalIncome:
+   - Menggunakan await pada fetchTransactions() untuk mengambil data transaksi.
+   - Filter data hanya yang bertipe "income".
+   - Gunakan reduce() untuk menghitung total amount dari semua transaksi "income".
+4. Output: Total amount dari transaksi bertipe "income".
+
+Nantinya, jika ada error, akan muncul di console, tapi jika berhasil, akan menampilkan Total income amount.
+
+*/
