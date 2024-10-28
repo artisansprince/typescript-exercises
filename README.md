@@ -22,8 +22,7 @@ Repository ini berisi tantangan algoritma harian dengan TypeScript. Setiap pagi,
 3. [2024-10-25 Tantangan 3: Palindrome Check](src/20241025-palindrome-check.ts)
 4. [2024-10-26 Tantangan 4: Async Fetch Data Sum](src/20241026-async-fetch-data-sum.ts)
 5. [2024-10-27 Tantangan 5: Async Sort and Filter Data](src/20241027-async-sort-and-filter-data.ts)
-
-
+6. [2024-10-28 Tantangan 6: Async Aggregate Data](src/20241028-async-aggregate-data.ts)
 
 
 
