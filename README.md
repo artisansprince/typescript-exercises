@@ -23,7 +23,7 @@ Repository ini berisi tantangan algoritma harian dengan TypeScript. Setiap pagi,
 4. [2024-10-26 Tantangan 4: Async Fetch Data Sum](src/20241026-async-fetch-data-sum.ts)
 5. [2024-10-27 Tantangan 5: Async Sort and Filter Data](src/20241027-async-sort-and-filter-data.ts)
 6. [2024-10-28 Tantangan 6: Async Aggregate Data](src/20241028-async-aggregate-data.ts)
-
+6. [2024-10-28 Tantangan 6: Async Filter and Map Arrow](src/20241029-async-filter-and-map-arrow.ts)
 
 
 ## Cara Memulai
