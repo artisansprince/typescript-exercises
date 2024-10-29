@@ -48,4 +48,14 @@ filterAndMapProducts()
     .catch(error => console.error("Error:", error));
 
 
-    
+// pembahasan program
+
+/*
+1. fetchProducts: Fungsi async dengan arrow function yang mengembalikan array produk dummy.
+2. filterAndMapProducts:
+   Mengambil data produk dengan await fetchProducts().
+   Menggunakan arrow function di filter untuk menyaring produk dengan harga di atas 100.
+   Menggunakan arrow function di map untuk hanya mengambil name dan price dari setiap produk yang lulus filter.
+3. Output: Jika berhasil, menampilkan array produk yang sudah terfilter dan dimap; jika ada error, ditampilkan di console.
+
+*/ 
