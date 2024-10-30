@@ -47,4 +47,9 @@ console.log(countDuplicates("programming")); // Output: 3
 console.log(countDuplicates("typescript"));  // Output: 2
 console.log(countDuplicates("hello world")); // Output: 2 (karena 'l' dan 'o' muncul lebih dari sekali)
 
-
+// pembahasan program
+/*
+1. Program ini mengubah string jadi lowercase supaya perhitungannya case-insensitive.
+2. Menggunakan objek charCount untuk menyimpan jumlah kemunculan setiap karakter.
+3. Setelah menghitung semua karakter, kita cek berapa karakter yang muncul lebih dari sekali, dan increment duplicateCount setiap kali menemukan karakter yang muncul lebih dari sekali.
+*/ 
