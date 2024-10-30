@@ -19,3 +19,32 @@ Output: 1 (karena hanya karakter t yang muncul dua kali)
 
 */
 
+// program penyelesaian
+
+function countDuplicates(str: string): number {
+    // Ubah string ke lowercase biar case-insensitive
+    const lowerStr = str.toLowerCase();
+    
+    // Buat objek untuk menyimpan jumlah setiap karakter
+    const charCount: Record<string, number> = {};
+
+    // Loop setiap karakter dalam string
+    for (const char of lowerStr) {
+        charCount[char] = (charCount[char] || 0) + 1;
+    }
+
+    // Hitung jumlah karakter yang muncul lebih dari sekali
+    let duplicateCount = 0;
+    for (const count of Object.values(charCount)) {
+        if (count > 1) duplicateCount++;
+    }
+
+    return duplicateCount;
+}
+
+// Contoh pengujian
+console.log(countDuplicates("programming")); // Output: 3
+console.log(countDuplicates("typescript"));  // Output: 2
+console.log(countDuplicates("hello world")); // Output: 2 (karena 'l' dan 'o' muncul lebih dari sekali)
+
+
