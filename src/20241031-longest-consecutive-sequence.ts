@@ -56,3 +56,13 @@ function longestConsecutive(nums: number[]): number {
 console.log(longestConsecutive([100, 4, 200, 1, 3, 2])); // output: 4
 console.log(longestConsecutive([0, -1, 9, 1, 8, 7, 2, 3, -2])); // output: 6
 console.log(longestConsecutive([10, 5, 6, 3, 11, 7, 4, 8, 9])); // output: 7
+
+
+// pembahasan
+
+/*
+- Set digunakan agar lebih efisien dalam pencarian elemen dan menghapus duplikat angka.
+- Untuk setiap elemen num dalam numSet, kita cek apakah num - 1 ada. Jika tidak ada, artinya num adalah awal dari urutan berturut-turut.
+- Kita hitung panjang urutan berturut-turut dari angka num tersebut dan memperbarui longestStreak jika panjangnya lebih besar dari urutan sebelumnya.
+
+*/
