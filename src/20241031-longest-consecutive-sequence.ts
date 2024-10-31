@@ -23,3 +23,36 @@ Gunakan struktur data seperti Set untuk efisiensi saat mengecek apakah angka ter
 
 
 */
+
+
+// program penyelesaian
+
+function longestConsecutive(nums: number[]): number {
+    // buat Set dari array untuk menghilangkan duplikat dan mempermudah pencarian
+    const numSet = new Set(nums);
+    let longestStreak = 0;
+
+    for (const num of numSet) {
+        // mulai urutan baru jika angka sebelumnya (num - 1) tidak ada dalam set
+        if (!numSet.has(num - 1)) {
+            let currentNum = num;
+            let currentStreak = 1;
+
+            // hitung panjang urutan berturut-turut
+            while (numSet.has(currentNum + 1)) {
+                currentNum++;
+                currentStreak++;
+            }
+
+            // update longestStreak jika urutan saat ini lebih panjang
+            longestStreak = Math.max(longestStreak, currentStreak);
+        }
+    }
+
+    return longestStreak;
+}
+
+// pengujian
+console.log(longestConsecutive([100, 4, 200, 1, 3, 2])); // output: 4
+console.log(longestConsecutive([0, -1, 9, 1, 8, 7, 2, 3, -2])); // output: 6
+console.log(longestConsecutive([10, 5, 6, 3, 11, 7, 4, 8, 9])); // output: 7
