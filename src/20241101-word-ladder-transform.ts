@@ -1,4 +1,5 @@
-/*
+/* 20241101-word-ladder-transform.ts
+
 Tantangan hari ini: Word Ladder Transform
 Buat program yang bisa menentukan jumlah langkah minimal untuk mengubah satu kata menjadi kata lain, di mana setiap perubahan hanya boleh mengganti satu huruf dan setiap kata hasil perubahan harus ada dalam sebuah daftar kata yang valid (misalnya seperti di kamus).
 
@@ -55,3 +56,15 @@ function wordLadder(start: string, end: string, wordList: string[]): number {
 // Contoh pengujian
 console.log(wordLadder("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"])); // Output: 5
 console.log(wordLadder("hit", "cog", ["hot", "dot", "dog", "lot", "log"])); // Output: 0
+
+
+// pembahasan program
+
+/*
+- Set digunakan untuk daftar kata wordList agar pencarian lebih cepat.
+- BFS (Breadth-First Search) diterapkan untuk menemukan jalur perubahan terpendek dari start ke end.
+- Pada setiap langkah:
+  - Program memeriksa setiap kemungkinan perubahan satu huruf.
+  - Kata hasil perubahan dicek, dan jika ada dalam wordSet, maka kata tersebut ditambahkan ke antrian BFS.
+- Ketika mencapai kata end, kita langsung mengembalikan jumlah langkah yang dibutuhkan.
+*/
