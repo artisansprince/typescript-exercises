@@ -37,3 +37,44 @@ Pastikan untuk memeriksa batas matriks agar tidak keluar dari area yang di-fill.
 
 */
 
+// program penyelesaian
+function floodFill(image: number[][], sr: number, sc: number, newColor: number): number[][] {
+    const originalColor = image[sr][sc];
+    if (originalColor === newColor) return image; // Jika warna asli sama dengan warna baru, langsung return
+
+    // Fungsi rekursif untuk DFS flood fill
+    function fill(r: number, c: number) {
+        if (r < 0 || r >= image.length || c < 0 || c >= image[0].length) return; // Jika di luar batas, return
+        if (image[r][c] !== originalColor) return; // Jika warna tidak sama dengan warna asli, return
+        
+        image[r][c] = newColor; // Ubah warna
+
+        // Lakukan flood fill ke empat arah
+        fill(r + 1, c); // bawah
+        fill(r - 1, c); // atas
+        fill(r, c + 1); // kanan
+        fill(r, c - 1); // kiri
+    }
+
+    fill(sr, sc); // Panggil fungsi fill dari posisi awal
+    return image;
+}
+
+// Contoh pengujian
+console.log(floodFill(
+    [
+        [1, 1, 1],
+        [1, 1, 0],
+        [1, 0, 1]
+    ], 
+    1, 1, 2
+));
+// Output yang diharapkan:
+// [
+//   [2, 2, 2],
+//   [2, 2, 0],
+//   [2, 0, 1]
+// ]
+
+
+
