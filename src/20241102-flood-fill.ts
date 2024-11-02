@@ -78,3 +78,10 @@ console.log(floodFill(
 
 
 
+// pembahasan program
+/*
+Program memeriksa apakah warna di posisi awal sudah sama dengan newColor. Jika ya, langsung kembalikan matriks karena tidak perlu diubah.
+Menggunakan rekursi pada fungsi fill untuk mengganti warna piksel ke newColor jika sesuai, serta memeriksa posisi tetangganya (atas, bawah, kiri, dan kanan).
+Algoritma DFS dilakukan untuk mengisi area yang terhubung dan berwarna sama.
+
+*/
