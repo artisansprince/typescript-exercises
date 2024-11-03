@@ -83,3 +83,17 @@ console.log(kmpSearch("hello world", "world")); // Output yang diharapkan: 6
 console.log(kmpSearch("abcdabcabcd", "abcab")); // Output yang diharapkan: 4
 console.log(kmpSearch("teststring", "string")); // Output yang diharapkan: 4
 console.log(kmpSearch("abcd", "xyz"));          // Output yang diharapkan: -1
+
+
+
+// pembahasan program
+/*
+Fungsi buildLPS:
+Membuat tabel Longest Prefix Suffix (LPS) yang menunjukkan berapa banyak karakter dari awal pola yang bisa dihindari saat ada mismatch.
+Fungsi kmpSearch:
+Menjalankan algoritma KMP menggunakan tabel LPS untuk mencari posisi substring.
+Saat ada karakter yang cocok, i dan j akan maju. Jika pattern ditemukan, kembalikan indeks awal.
+Jika ada mismatch dan j tidak nol, j akan bergeser sesuai tabel LPS untuk menghindari perbandingan ulang yang tidak perlu.
+
+
+*/
