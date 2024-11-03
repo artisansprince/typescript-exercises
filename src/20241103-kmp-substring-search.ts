@@ -1,4 +1,4 @@
-/*
+/* 20241103-kmp-substring-search.ts 
 
 Tantangan hari ini: KMP Substring Search
 Kita akan membuat program untuk mencari indeks pertama kali substring muncul dalam sebuah string, menggunakan algoritma Knuth-Morris-Pratt (KMP). Algoritma ini lebih efisien dari pencarian biasa karena menghindari pemeriksaan ulang karakter yang sudah cocok.
